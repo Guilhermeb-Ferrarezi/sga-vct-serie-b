@@ -21,6 +21,7 @@ COPY --from=build /app/bun.lockb ./bun.lockb
 COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/dist ./dist
 COPY --from=build /app/server.ts ./server.ts
+COPY --from=build /app/src/lib/app-path.ts ./src/lib/app-path.ts
 
 EXPOSE 3000
 

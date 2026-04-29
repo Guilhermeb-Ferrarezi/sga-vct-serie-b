@@ -3,13 +3,14 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
+import { APP_BASE_PATH, APP_PATH } from "./src/lib/app-path";
 
 export default defineConfig({
-  base: "/vct-rp/serie-b/",
+  base: APP_PATH,
   plugins: [
     tanstackStart({
       router: {
-        basepath: "/vct-rp/serie-b",
+        basepath: APP_BASE_PATH,
       },
     }),
     react(),
