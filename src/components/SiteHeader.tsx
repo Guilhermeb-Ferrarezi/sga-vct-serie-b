@@ -1,4 +1,6 @@
+import * as React from "react";
 import { Button } from "@/components/ui/button";
+import { WhatsAppChoiceDialog } from "@/components/WhatsAppChoiceDialog";
 import logo from "@/assets/sga-logo.png";
 
 const links = [
@@ -9,6 +11,8 @@ const links = [
 ];
 
 export function SiteHeader() {
+  const [open, setOpen] = React.useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/60 border-b border-border">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
@@ -33,11 +37,13 @@ export function SiteHeader() {
           variant="default"
           size="sm"
           className="bg-brand-red hover:bg-brand-red-glow text-brand-cream font-mono uppercase tracking-widest text-xs"
-          asChild
+          type="button"
+          onClick={() => setOpen(true)}
         >
-          <a href="#inscricao">WhatsApp</a>
+          WhatsApp
         </Button>
       </div>
+      <WhatsAppChoiceDialog open={open} onOpenChange={setOpen} />
     </header>
   );
 }
