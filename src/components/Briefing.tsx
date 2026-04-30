@@ -1,5 +1,5 @@
 const incluso = [
-  "Estrutura presencial completa",
+  "Estrutura presencial completa!",
   "Cobertura com videomaker e fotógrafo",
   "Registro no ranking oficial",
   "Transmissão ao vivo com narração",
@@ -26,7 +26,7 @@ export function Briefing() {
             { label: "FORMATO", value: "5V5 — 8 TIMES", strong: true, sub: "Chave superior e inferior (eliminação dupla)" },
             { label: "ELEGIBILIDADE", value: "GOLD 3 ATÉ DIAMANTE 1", strong: true, sub: "Gold 1, Gold 2 ou acima de Diamante 2 não joga. Máx 1 Diamante 2 por time." },
             { label: "INSCRIÇÃO", value: "R$ 79,90", strong: true, sub: "por competidor" },
-            { label: "INÍCIO", value: "08H00", strong: true, sub: "encerramento entre 21h e 22h" },
+            { label: "INÍCIO", value: "08H00", strong: true, sub: "" },
           ].map((item) => (
             <div key={item.label} className="bg-background p-8">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
