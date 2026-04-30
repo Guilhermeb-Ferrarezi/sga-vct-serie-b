@@ -1,30 +1,11 @@
-const DEFAULT_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER?.trim().replace(/\D/g, "") ?? "";
-const DEFAULT_URL = import.meta.env.VITE_WHATSAPP_URL?.trim() ?? "";
+export const WHATSAPP_URL = "https://wa.me/5516991069776";
 
-function appendTextParam(baseUrl: string, message: string) {
-  const url = new URL(baseUrl);
+export function buildWhatsAppUrl(message?: string) {
+  if (!message) {
+    return WHATSAPP_URL;
+  }
+
+  const url = new URL(WHATSAPP_URL);
   url.searchParams.set("text", message);
   return url.toString();
-}
-
-export function buildWhatsAppUrl(message: string) {
-  try {
-    if (DEFAULT_URL) {
-      return appendTextParam(DEFAULT_URL, message);
-    }
-
-    if (!DEFAULT_NUMBER) {
-      return null;
-    }
-
-    const url = new URL(`https://wa.me/${DEFAULT_NUMBER}`);
-    url.searchParams.set("text", message);
-    return url.toString();
-  } catch {
-    return null;
-  }
-}
-
-export function hasWhatsAppDestination() {
-  return Boolean(DEFAULT_URL || DEFAULT_NUMBER);
 }

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Button } from "@/components/ui/button";
-import { WhatsAppChoiceDialog } from "@/components/WhatsAppChoiceDialog";
 import logo from "@/assets/sga-logo.png";
+import { WhatsAppChoiceDialog } from "@/components/WhatsAppChoiceDialog";
 
 const links = [
   { label: "Sobre", href: "#sobre" },

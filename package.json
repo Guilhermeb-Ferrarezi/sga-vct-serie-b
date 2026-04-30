@@ -9,6 +9,7 @@
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "start:prod": "bun server.ts",
+    "test": "bun test",
     "lint": "eslint .",
     "format": "prettier --write ."
   },

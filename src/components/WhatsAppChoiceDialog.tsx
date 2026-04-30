@@ -6,7 +6,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { buildWhatsAppUrl, hasWhatsAppDestination } from "@/lib/whatsapp";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 type WhatsAppChoiceDialogProps = {
   open: boolean;
@@ -34,10 +34,7 @@ const options = [
 
 function openWhatsApp(message: string) {
   const url = buildWhatsAppUrl(message);
-  if (!url) return false;
-
   window.open(url, "_blank", "noopener,noreferrer");
-  return true;
 }
 
 export function WhatsAppChoiceDialog({ open, onOpenChange }: WhatsAppChoiceDialogProps) {
@@ -64,10 +61,8 @@ export function WhatsAppChoiceDialog({ open, onOpenChange }: WhatsAppChoiceDialo
                 key={option.id}
                 type="button"
                 onClick={() => {
-                  const opened = openWhatsApp(option.message);
-                  if (opened) {
-                    onOpenChange(false);
-                  }
+                  openWhatsApp(option.message);
+                  onOpenChange(false);
                 }}
                 className="group w-full border border-brand-cream/12 bg-[#0c101d] px-6 py-5 text-left transition-colors hover:border-brand-red/70 hover:bg-[#101529]"
               >
@@ -98,12 +93,6 @@ export function WhatsAppChoiceDialog({ open, onOpenChange }: WhatsAppChoiceDialo
             Cancelar
           </button>
         </div>
-
-        {!hasWhatsAppDestination() && (
-          <p className="text-xs text-brand-cream/45">
-            Configure VITE_WHATSAPP_NUMBER ou VITE_WHATSAPP_URL para habilitar o envio.
-          </p>
-        )}
       </DialogContent>
     </Dialog>
   );
