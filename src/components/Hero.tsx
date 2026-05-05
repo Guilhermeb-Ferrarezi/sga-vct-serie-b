@@ -62,8 +62,8 @@ export function Hero() {
             ))}
           </div>
           <p className="mt-4 text-sm text-muted-foreground">
-            Apenas jogadores dos elos Ouro, Platina e Diamante podem participar, sem limite de elo
-            por time dentro da faixa permitida. Verificação obrigatória.
+            Apenas jogadores dos elos Ouro, Platina e Diamante podem participar. Verificação
+            obrigatória.
           </p>
         </div>
 

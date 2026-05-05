@@ -59,7 +59,7 @@ export function EloTiers() {
           {[
             { title: "QUEM PODE JOGAR", body: "Gold 3, Platinum 1 a 3, Diamante 1 e Diamante 2." },
             { title: "QUEM NÃO PODE JOGAR", body: "Ranks abaixo de, ou qualquer elo acima de Diamante 2." },
-            { title: "RESUMO RÁPIDO", body: "Permitido de Gold 3 até Diamante 2, sem limite por elo no mesmo time." },
+            { title: "RESUMO RÁPIDO", body: "Permitido de Gold 3 até Diamante 2." },
           ].map((c) => (
             <div key={c.title} className="bg-card/60 border border-border p-6">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-brand-red">
