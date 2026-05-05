@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "QUEM PODE PARTICIPAR DESSA EDIÇÃO?", a: "Jogadores nos elos Gold 3, Platinum 1 a 3, Diamante 1 e Diamante 2 (máx 1 Diamante 2 por time)." },
+  { q: "QUEM PODE PARTICIPAR DESSA EDIÇÃO?", a: "Jogadores nos elos Gold 3, Platinum 1 a 3, Diamante 1 e Diamante 2. Não existe limite por elo dentro do mesmo time." },
   { q: "COMO FUNCIONA O FORMATO DO CAMPEONATO?", a: "5v5 com 8 times em chave de eliminação dupla (superior e inferior)." },
   { q: "COMO FAÇO MINHA INSCRIÇÃO?", a: "Pelo botão 'Garanta sua vaga' ou WhatsApp. A vaga é confirmada após pagamento e verificação dos elos via Riot ID." },
   { q: "POSSO PARTICIPAR MESMO SEM TIME FECHADO?", a: "Sim. Entre em contato pelo WhatsApp e ajudamos a montar um time com outros jogadores." },

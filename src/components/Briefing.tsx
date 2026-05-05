@@ -24,7 +24,7 @@ export function Briefing() {
             { label: "DATA", value: "07/06/2026", strong: false },
             { label: "LOCAL", value: "Av. Nove de Julho, 1992 — Ribeirão Preto", strong: false },
             { label: "FORMATO", value: "5V5 — 8 TIMES", strong: true, sub: "Chave superior e inferior (eliminação dupla)" },
-            { label: "ELEGIBILIDADE", value: "GOLD 3 ATÉ DIAMANTE 1", strong: true, sub: "Gold 1, Gold 2 ou acima de Diamante 2 não joga. Máx 1 Diamante 2 por time." },
+            { label: "ELEGIBILIDADE", value: "GOLD 3 ATÉ DIAMANTE 2", strong: true, sub: "Gold 1, Gold 2 ou acima de Diamante 2 não joga. Não existe limite por elo no mesmo time." },
             { label: "INSCRIÇÃO", value: "R$ 79,90", strong: true, sub: "por competidor" },
             { label: "INÍCIO", value: "08H00", strong: true, sub: "" },
           ].map((item) => (

@@ -18,7 +18,7 @@ const tiers = [
     name: "DIAMANTE",
     color: "text-tier-diamond",
     accent: "border-tier-diamond",
-    desc: "Diamante 1 pode jogar. Diamante 2 tem limite de 1 por time.",
+    desc: "Diamante 1 e Diamante 2 podem jogar.",
   },
 ];
 
@@ -34,8 +34,8 @@ export function EloTiers() {
           SÉRIE B <span className="text-brand-red">(INTERMEDIÁRIO)</span>
         </h2>
         <p className="mt-6 max-w-2xl text-muted-foreground">
-          A Série B é voltada para jogadores intermediários. Jogadores de Gold 3 até Diamante 1
-          podem participar, mas cada time pode ter no máximo 1 jogador Diamante 2.
+          A Série B é voltada para jogadores intermediários. Jogadores de Gold 3 até Diamante 2
+          podem participar.
         </p>
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -59,7 +59,7 @@ export function EloTiers() {
           {[
             { title: "QUEM PODE JOGAR", body: "Gold 3, Platinum 1 a 3, Diamante 1 e Diamante 2." },
             { title: "QUEM NÃO PODE JOGAR", body: "Ranks abaixo de, ou qualquer elo acima de Diamante 2." },
-            { title: "RESUMO RÁPIDO", body: "Permitido até Diamante 1. Máximo 1 Diamante 2 por time." },
+            { title: "RESUMO RÁPIDO", body: "Permitido de Gold 3 até Diamante 2, sem limite por elo no mesmo time." },
           ].map((c) => (
             <div key={c.title} className="bg-card/60 border border-border p-6">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-brand-red">
@@ -75,10 +75,10 @@ export function EloTiers() {
             REGRA IMPORTANTE
           </p>
           <p className="mt-4 text-brand-cream">
-            Cada time pode ter no máximo <strong>1 jogador Diamante 2</strong>.
+            Não existe mais limite de jogadores por elo dentro do mesmo time.
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
-            Esse limite ajuda a manter as partidas equilibradas.
+            Desde que todos estejam dentro dos elos permitidos da Série B, a composição do time é livre.
           </p>
         </div>
       </div>
