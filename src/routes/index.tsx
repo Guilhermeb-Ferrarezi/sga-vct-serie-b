@@ -10,7 +10,7 @@ import { Faq } from "@/components/Faq";
 import { Inscricao } from "@/components/Inscricao";
 import { SiteFooter } from "@/components/SiteFooter";
 
-const ogImage = `${import.meta.env.BASE_URL}vct-serie-b.png`;
+const ogImage = `${import.meta.env.BASE_URL}vct-serie-b.jpg`;
 
 export const Route = createFileRoute("/")({
   head: () => ({
