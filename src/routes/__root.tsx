@@ -38,6 +38,7 @@ export const Route = createRootRoute({
       { property: "og:image", content: ogImage },
       { property: "og:image:alt", content: "Jogadores competindo no VCT RP Série B" },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://santos-games.com/vct-ribeirao/serie-b/" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: ogImage },
     ],
