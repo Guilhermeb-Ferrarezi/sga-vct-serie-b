@@ -10,6 +10,8 @@ import { Faq } from "@/components/Faq";
 import { Inscricao } from "@/components/Inscricao";
 import { SiteFooter } from "@/components/SiteFooter";
 
+const ogImage = `${import.meta.env.BASE_URL}vct-serie-b.png`;
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -24,6 +26,10 @@ export const Route = createFileRoute("/")({
         property: "og:description",
         content: "Torneio presencial de Valorant em Ribeirão Preto. Gold 3 a Diamante 1.",
       },
+      { property: "og:image", content: ogImage },
+      { property: "og:image:alt", content: "Jogadores competindo no VCT RP Série B" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: ogImage },
     ],
   }),
   component: Index,

@@ -1,6 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+const ogImage = `${import.meta.env.BASE_URL}vct-serie-b.png`;
 
 function NotFoundComponent() {
   return (
@@ -34,8 +35,11 @@ export const Route = createRootRoute({
       { name: "author", content: "Santos Games Arena" },
       { property: "og:title", content: "VCT RP Série B" },
       { property: "og:description", content: "Campeonato presencial de Valorant em Ribeirão Preto." },
+      { property: "og:image", content: ogImage },
+      { property: "og:image:alt", content: "Jogadores competindo no VCT RP Série B" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: ogImage },
     ],
     links: [
       {
