@@ -1,7 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
-const ogImage = `${import.meta.env.BASE_URL}vct-serie-b.jpg`;
+const ogImage = "https://santos-games.com/vct-ribeirao/serie-b/vct-serie-b.jpg";
 
 function NotFoundComponent() {
   return (
